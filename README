@@ -1,0 +1,13 @@
+The Generic XML Parser/Printer library is a simple yet powerful XML parser written in JFlex.  I wrote the original version in 2003, and frankly very little has changed since then.  
+
+The parser allows you to extend from the abstract class AGenericXMLParser.  This abstract class as reasonble defaults for all the methods for the parser.  So if all you need to do is parse tags and their attributes, then all you have to do is implement your own beginTag() method.  
+
+You can implement multiple parsers, using parsers to parse particular subtrees within an XML file.
+
+And the parser is very fast.  
+
+But the parser does not Validate.  The assumption is that you are parsing good XML.  It will error out on unmatched tags, but it isn't going to care what those tags are.
+
+Have Fun!
+
+P.S.  If you have any questions, email me at paulsn@dtrules.com  If you really want to use this library, you are likely to have questions since the documentation is rather thin (mostly the source code).
